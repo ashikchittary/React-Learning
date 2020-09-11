@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+@model Edify.Api.ViewModel.CustomerViewModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customer</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Add", "Customer", FormMethod.Post))
+        {
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" id="txtName" name="Name" /></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" id="txtLastName" name="Email" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" /></td>
+            </tr>
+        </table>
+        <hr />
+        }
+    </div>
+</body>
+</html>
