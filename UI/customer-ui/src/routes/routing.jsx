@@ -1,3 +1,4 @@
+import Customer from '../components/dashboard/customer/customer.js';
 import Starter from '../views/starter/starter.jsx';
 // ui components
 import Alerts from '../views/ui-components/alert.jsx';
@@ -15,6 +16,12 @@ var ThemeRoutes = [
         name: 'Dashboard',
         icon: 'mdi mdi-view-dashboard',
         component: Starter
+    },
+    {
+        path: '/customer',
+        name: 'Customer',
+        icon: 'mdi mdi-view-dashboard',
+        component: Customer
     },
     {
         path: '/alert',
